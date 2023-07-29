@@ -1,3 +1,6 @@
+#videos
+/assets/videos/*.mp4
+
 # Miscellaneous
 *.class
 *.log
