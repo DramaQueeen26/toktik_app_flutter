@@ -14,6 +14,7 @@ class VideoScrollableView extends StatelessWidget {
   Widget build(BuildContext context) {
     return PageView(
       physics: const BouncingScrollPhysics(),
+      scrollDirection: Axis.vertical,
       children: [
         Container(color: Colors.red),
         Container(color: Colors.blue),
