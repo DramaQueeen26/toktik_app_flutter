@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:toktik_app_flutter/domain/entities/video_post.dart';
 
+import '../../../config/helpers/number_formats.dart';
+
 class VideoButtons extends StatelessWidget {
   
   final VideoPost video;
@@ -41,7 +43,7 @@ class _CustomIconButton extends StatelessWidget {
           onPressed: () {}, 
           icon: Icon( iconData, color: color, size: 30)
         ),
-        Text('$value')
+        Text(NumberFormats.numberFormat( value.toDouble() ))
       ],
     );
   }
